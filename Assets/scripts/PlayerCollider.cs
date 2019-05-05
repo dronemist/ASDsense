@@ -19,11 +19,10 @@ public class PlayerCollider : MonoBehaviour
         yield return new WaitForSeconds(1f);
         isColliding = false;
     }
-        
     // enter on collision
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag == "Lethal_Obstacle")
+        if (collision.collider.tag == "Lethal_Obstacle")
         {
             movement.rb.velocity = new Vector3(0f, 0f, 0f);
             movement.enabled = false;
@@ -49,7 +48,6 @@ public class PlayerCollider : MonoBehaviour
                 while (counter < max)
                 {
                     randNum = Random.Range(0, 13);
-                    Debug.Log(other.gameObject.name);
                     if (randNum <= 4)
                     {
 

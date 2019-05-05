@@ -17,6 +17,9 @@ public class PlayerMov : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector3(side_velocity, rb.velocity.y, forward_velociy);
+        // Increasing speed with time
+        forward_velociy += 0.01f * Time.deltaTime;
+        forward_velociy = Math.Min(8, forward_velociy);
         // making it move with constant speed in forward direction
         if (Input.GetKey(moveR) && lane<1 && !control_locked)
         {
@@ -36,7 +39,11 @@ public class PlayerMov : MonoBehaviour
     }
     IEnumerator stopSlide()
     {
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0);
+        while (rb.transform.position.x!= (lane*2))
+        {
+
+        }
         side_velocity = 0;
         control_locked = false;
     }
