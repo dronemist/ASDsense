@@ -27,7 +27,7 @@ public class PlayerCollider : MonoBehaviour
         {
             movement.rb.velocity = new Vector3(0f, 0f, 0f);
             movement.enabled = false;
-            SceneManager.LoadScene("menu");
+            SceneManager.LoadScene("endgame");
         }
     }
     private void OnTriggerEnter(Collider other)

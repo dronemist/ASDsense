@@ -765,6 +765,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4808123983174868805, guid: d042ee5bea4a2ee488fe9978a3e29359,
+        type: 3}
+      propertyPath: forward_velociy
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4808123983174868803, guid: d042ee5bea4a2ee488fe9978a3e29359,
         type: 3}
       propertyPath: m_Enabled
@@ -784,11 +789,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4808123983174868805, guid: d042ee5bea4a2ee488fe9978a3e29359,
-        type: 3}
-      propertyPath: forward_velociy
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4808123983174868802, guid: d042ee5bea4a2ee488fe9978a3e29359,
         type: 3}
