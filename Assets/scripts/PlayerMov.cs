@@ -9,10 +9,10 @@ public class PlayerMov : MonoBehaviour
     public KeyCode moveR;
     public KeyCode moveL;
     public float forward_velociy;
-    public float side_velocity = 0f ;
+    private float side_velocity = 0f ;
     // lane is 0 for middle, -1 for left and 1 for right
-    public int lane = 0;
-    public bool control_locked = false;
+    private int lane = 0;
+    private bool control_locked = false;
     // Update is called once per frame
     void Update()
     {

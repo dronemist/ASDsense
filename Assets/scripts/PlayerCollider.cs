@@ -48,35 +48,35 @@ public class PlayerCollider : MonoBehaviour
                 float counter = min;
                 while (counter < max)
                 {
-                    randNum = Random.Range(0, 10);
+                    randNum = Random.Range(0, 13);
                     Debug.Log(other.gameObject.name);
                     if (randNum <= 4)
                     {
 
                     }
-                    else if (randNum == 5)
+                    else if (randNum <= 6)
                     {
                         Instantiate(LethalObject, new Vector3(-2, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 6)
+                    else if (randNum <= 8)
                     {
                         Instantiate(LethalObject, new Vector3(0, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 7)
+                    else if (randNum <= 10)
                     {
                         Instantiate(LethalObject, new Vector3(2, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 8)
+                    else if (randNum == 11)
                     {
                         Instantiate(LethalObject, new Vector3(-2, object_y_pos, counter), Quaternion.identity);
                         Instantiate(LethalObject, new Vector3(0, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 9)
+                    else if (randNum == 12)
                     {
                         Instantiate(LethalObject, new Vector3(0, object_y_pos, counter), Quaternion.identity);
                         Instantiate(LethalObject, new Vector3(2, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 10)
+                    else if (randNum == 13)
                     {
                         Instantiate(LethalObject, new Vector3(2, object_y_pos, counter), Quaternion.identity);
                         Instantiate(LethalObject, new Vector3(-2, object_y_pos, counter), Quaternion.identity);
