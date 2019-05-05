@@ -6,6 +6,7 @@ https://docs.google.com/presentation/d/1VIMT_zOImYptKoy6Crhl7x9wOZjkImpSUxhidvDr
 
 
 To Do List
+
 1.) Scoring:= constant * (distance)^0.5  OR  constant * (distance in between two points)
 2.) Life = 100 - (lt) + (lg) where
     lt = {
