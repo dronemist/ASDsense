@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4808123983174868860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.64, z: -5.39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -92,7 +92,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4808123983174868806
 Rigidbody:
@@ -109,7 +109,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &4808123983174868805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,9 +126,7 @@ MonoBehaviour:
   moveR: 100
   moveL: 97
   forward_velociy: 4
-  side_velocity: 0
   lane: 0
-  control_locked: 0
 --- !u!114 &4808123983174868802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,11 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d9794b826f9cf64288f9f71b75e2ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  track: {fileID: 0}
-  LethalObject: {fileID: 0}
+  track: {fileID: 6317026983642442919, guid: 0f5c5b49f24fbb148b01b36fc255e36d, type: 3}
+  LethalObject: {fileID: 3052988655242277242, guid: c0db72a425b2aa942ad2ed9953a9ceea,
+    type: 3}
   movement: {fileID: 4808123983174868805}
-  y_offset: 0
-  z_offset: 0
-  platform_length: 0
-  object_length: 0
-  object_y_pos: 0
+  y_offset: -1
+  z_offset: 24
+  platform_length: 24
+  object_length: 2
+  object_y_pos: 1.5

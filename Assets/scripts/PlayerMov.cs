@@ -11,7 +11,7 @@ public class PlayerMov : MonoBehaviour
     public float forward_velociy;
     private float side_velocity = 0f ;
     // lane is 0 for middle, -1 for left and 1 for right
-    private int lane = 0;
+    public int lane = 0;
     private bool control_locked = false;
     // Update is called once per frame
     void Update()
@@ -39,13 +39,9 @@ public class PlayerMov : MonoBehaviour
     }
     IEnumerator stopSlide()
     {
-        yield return new WaitForSeconds(0);
-        while (rb.transform.position.x!= (lane*2))
-        {
-
-        }
-        side_velocity = 0;
-        control_locked = false;
+            yield return new WaitForSeconds(0.252f);
+            side_velocity = 0;
+            control_locked = false;
     }
 
 }

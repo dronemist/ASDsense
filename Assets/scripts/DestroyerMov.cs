@@ -22,6 +22,8 @@ public class DestroyerMov : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        // Car is deleted using other script
+        if (other.gameObject.tag!="Lethal_Obstacle")
+         Destroy(other.gameObject);
     }
 }
