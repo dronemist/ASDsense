@@ -7,19 +7,8 @@ https://docs.google.com/presentation/d/1VIMT_zOImYptKoy6Crhl7x9wOZjkImpSUxhidvDr
 
 To Do List
 
-1.) Scoring:= constant * (distance)^0.5  OR  constant * (distance in between two points)
-2.) Life = 100 - (lt) + (lg) where
-    lt = {
-            80 if obstacle is vehicle
-            50 if obstacle is person/pole/tree
-            0.4*(time of sudden light)
-          }
-    lg = {
-            60/(time taken to solve some puzzle)
-          }
-          
- 3.) Add some z distance between consecutive spawning obstacles to faciitate quick maneuvering.
- 
- 4.) Add an irritating sound track which plays continuously(or at some points randomly with probability 0.75).
- 
- 5.) The sudden light can be made at probability 0.5 and space must be entered, say 10 times before it fades.
+1) Add a canvas to ASD_game_scene and Normal_game_scene, for pause menu, enable disable it with esc and give and option to restart or go to main menu
+2) Instead of Volume show High score in Options menu(in main menu).To access highscore use the following syntax:-
+``
+high_score.text = "High Score: " + PlayerPrefs.GetFloat("HighScore", 0).ToString("0");
+``
