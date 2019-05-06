@@ -31,6 +31,11 @@ public class PlayerCollidernormal : MonoBehaviour
             {
                 movement.rb.velocity = new Vector3(0f, 0f, 0f);
                 movement.enabled = false;
+                PlayerPrefs.SetFloat("Normal_score", GM.score);
+                if(PlayerPrefs.GetFloat("Normal_score",0f) + PlayerPrefs.GetFloat("ASD_score",0f) > PlayerPrefs.GetFloat("HighScore",0f))
+                {
+                    PlayerPrefs.SetFloat("HighScore", PlayerPrefs.GetFloat("Normal_score",0f) + PlayerPrefs.GetFloat("ASD_score",0f));
+                }
                 SceneManager.LoadScene("endgame");
             }
         }
@@ -53,39 +58,41 @@ public class PlayerCollidernormal : MonoBehaviour
                 float counter = min;
                 while (counter < max)
                 {
-                    randNum = Random.Range(0, 14);
-                    if (randNum <= 4)
+                    randNum = Random.Range(0, 10);
+                    if (randNum <= 3)
                     {
 
                     }
-                    else if (randNum <= 6)
+                    else if (randNum == 4)
                     {
                         Instantiate(LethalObject, new Vector3(-2, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum <= 8)
+                    else if (randNum == 5)
                     {
                         Instantiate(LethalObject, new Vector3(0, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum <= 10)
+                    else if (randNum == 6)
                     {
                         Instantiate(LethalObject, new Vector3(2, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 11)
+                    else if (randNum == 7)
                     {
                         Instantiate(LethalObject, new Vector3(-2, object_y_pos, counter), Quaternion.identity);
                         Instantiate(LethalObject, new Vector3(0, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 12)
+                    else if (randNum == 8)
                     {
                         Instantiate(LethalObject, new Vector3(0, object_y_pos, counter), Quaternion.identity);
                         Instantiate(LethalObject, new Vector3(2, object_y_pos, counter), Quaternion.identity);
                     }
-                    else if (randNum == 13)
+                    else if (randNum == 9)
                     {
                         Instantiate(LethalObject, new Vector3(2, object_y_pos, counter), Quaternion.identity);
                         Instantiate(LethalObject, new Vector3(-2, object_y_pos, counter), Quaternion.identity);
                     }
                     counter += 4 * object_length;
+                    if (randNum >= 7 && randNum <= 9)
+                        counter += object_length;
                 }
                 StartCoroutine(makeFalse());
                 }

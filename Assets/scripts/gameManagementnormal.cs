@@ -7,7 +7,7 @@ public class gameManagementnormal : MonoBehaviour
 {
     public Transform player;
     public Text score_text;
-    static float score = 0f;
+    public float score = 0f;
     public Image healthbar;
     public float scoring_factor = 10;
     public float health = 100f;

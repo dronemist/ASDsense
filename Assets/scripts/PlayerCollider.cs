@@ -31,6 +31,7 @@ public class PlayerCollider : MonoBehaviour
             {
                 movement.rb.velocity = new Vector3(0f, 0f, 0f);
                 movement.enabled = false;
+                PlayerPrefs.SetFloat("ASD_score", GM.score);
                 SceneManager.LoadScene("Normal_game_scene");
             }
         }
