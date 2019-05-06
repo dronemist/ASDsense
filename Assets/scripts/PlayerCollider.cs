@@ -6,6 +6,7 @@ public class PlayerCollider : MonoBehaviour
     public GameObject track;
     public GameObject LethalObject;
     public PlayerMov movement;
+    public gameManagement GM;
     // offset of new track
     public float y_offset;
     public float z_offset;
@@ -24,9 +25,14 @@ public class PlayerCollider : MonoBehaviour
     {
         if (collision.collider.tag == "Lethal_Obstacle")
         {
-            movement.rb.velocity = new Vector3(0f, 0f, 0f);
-            movement.enabled = false;
-            SceneManager.LoadScene("endgame");
+            GM.health -= 20;
+            GM.scoring_factor -= 1f;
+            if (GM.health <= 0)
+            {
+                movement.rb.velocity = new Vector3(0f, 0f, 0f);
+                movement.enabled = false;
+                SceneManager.LoadScene("endgame");
+            }
         }
     }
     private void OnTriggerEnter(Collider other)

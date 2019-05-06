@@ -19,4 +19,8 @@ public class DeleteCar : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
+    }
 }

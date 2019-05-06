@@ -7,10 +7,12 @@ public class gameManagement : MonoBehaviour
 {
     public Transform player;
     public Text score_text;
-    public static int coin_total = 0;
     static float score = 0f;
+    public Image healthbar;
+    public Image happiness;
     public float scoring_factor = 10;
     public KeyCode incr_scoring;
+    public float health = 100f;
     float GetScore()
     {
         return score;
@@ -26,5 +28,7 @@ public class gameManagement : MonoBehaviour
         }
         score = player.position.z * scoring_factor;
         score_text.text = score.ToString("0");
+        healthbar.fillAmount = (health / 100f);
+        happiness.fillAmount = (scoring_factor / 10);
     }
 }
