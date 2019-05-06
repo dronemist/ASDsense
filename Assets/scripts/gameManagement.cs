@@ -13,6 +13,7 @@ public class gameManagement : MonoBehaviour
     public float scoring_factor = 10;
     public KeyCode incr_scoring;
     public float health = 100f;
+    private float last_position;
     float GetScore()
     {
         return score;
@@ -23,10 +24,11 @@ public class gameManagement : MonoBehaviour
         scoring_factor = Mathf.Max(1f, scoring_factor);
         if(Input.GetKeyUp(incr_scoring))
         {
-            scoring_factor += (0.3f);
+            scoring_factor += (0.2f);
             scoring_factor = Mathf.Min(10, scoring_factor);
         }
-        score = player.position.z * scoring_factor;
+        score += (Mathf.Abs(last_position - player.position.z)) * scoring_factor;
+        last_position = player.position.z;
         score_text.text = score.ToString("0");
         healthbar.fillAmount = (health / 100f);
         happiness.fillAmount = (scoring_factor / 10);

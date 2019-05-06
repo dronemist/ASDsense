@@ -10,6 +10,7 @@ public class PlayerMov : MonoBehaviour
     public KeyCode moveL;
     public float forward_velociy;
     private float side_velocity = 0f ;
+    private float timeLeft = 0.25f;
     // lane is 0 for middle, -1 for left and 1 for right
     public int lane = 0;
     private bool control_locked = false;
@@ -23,7 +24,7 @@ public class PlayerMov : MonoBehaviour
         // making it move with constant speed in forward direction
         if (Input.GetKey(moveR) && lane<1 && !control_locked)
         {
-            side_velocity = 8f;
+            side_velocity = 5f;
             lane += 1;
             //rb.transform.Translate(2f, 0, 0);
             StartCoroutine(stopSlide());
@@ -31,7 +32,7 @@ public class PlayerMov : MonoBehaviour
         }
         if (Input.GetKey(moveL) && lane>-1 && !control_locked)
         {
-            side_velocity = -8f;
+            side_velocity = -5f;
             lane += -1;
             //rb.transform.Translate(-2f, 0, 0);
             StartCoroutine(stopSlide());
@@ -41,10 +42,10 @@ public class PlayerMov : MonoBehaviour
     }
     IEnumerator stopSlide()
     {
-            //rb.transform.Translate(Time.deltaTime * side_velocity, 0, 0);
-            yield return new WaitForSeconds(0.25f);
-            side_velocity = 0;
-            control_locked = false;
+        //rb.transform.Translate(Time.deltaTime * side_velocity, 0, 0);
+        yield return new WaitForSeconds(0.4f);
+        side_velocity = 0;
+        control_locked = false;
     }
 
 }
