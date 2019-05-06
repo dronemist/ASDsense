@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
-public class PlayerCollider : MonoBehaviour
+public class PlayerCollidernormal : MonoBehaviour
 {
     public GameObject track;
     public GameObject LethalObject;
     public PlayerMov movement;
-    public gameManagement GM;
+    public gameManagementnormal GM;
     // offset of new track
     public float y_offset;
     public float z_offset;
@@ -31,7 +31,7 @@ public class PlayerCollider : MonoBehaviour
             {
                 movement.rb.velocity = new Vector3(0f, 0f, 0f);
                 movement.enabled = false;
-                SceneManager.LoadScene("Normal_game_scene");
+                SceneManager.LoadScene("endgame");
             }
         }
     }

@@ -12,7 +12,7 @@ public class back_to_menu : MonoBehaviour
 
     public void gotoGame()
     {
-        SceneManager.LoadScene("game_scene");
+        SceneManager.LoadScene("ASD_game_scene");
 
     }
 }

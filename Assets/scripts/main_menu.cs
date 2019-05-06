@@ -7,7 +7,7 @@ public class main_menu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("game_scene");
+        SceneManager.LoadScene("ASD_game_scene");
 
     }
 

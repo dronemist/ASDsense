@@ -140,11 +140,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   track: {fileID: 6317026983642442919, guid: 0f5c5b49f24fbb148b01b36fc255e36d, type: 3}
-  LethalObject: {fileID: 3052988655242277242, guid: c0db72a425b2aa942ad2ed9953a9ceea,
+  LethalObject: {fileID: 2325539412903677187, guid: e1afa91236dc30a42ba3819ccdefc2c4,
     type: 3}
   movement: {fileID: 4808123983174868805}
+  GM: {fileID: 0}
   y_offset: -1
   z_offset: 24
   platform_length: 24
   object_length: 2
-  object_y_pos: 1.5
+  object_y_pos: 0.536
