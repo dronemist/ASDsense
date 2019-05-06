@@ -53,7 +53,7 @@ public class PlayerCollider : MonoBehaviour
                 float counter = min;
                 while (counter < max)
                 {
-                    randNum = Random.Range(0, 13);
+                    randNum = Random.Range(0, 14);
                     if (randNum <= 4)
                     {
 

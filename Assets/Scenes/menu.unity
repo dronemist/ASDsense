@@ -2088,10 +2088,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: e0e6ca71093fd634ca669938a64c8e46, type: 3}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2102,21 +2102,22 @@ MonoBehaviour:
   m_Text: 'Controls:
 
     1.) People suffering with ASD face various obstacles in their day to day lives.
-    They are troubled by sudden flashes of light, constant amplilified noise, contact
-    with people etc. Try to navigate through the city while avoiding all such obstacles.
+    They are troubled by sudden flashes of light, constant amplilified noise,etc.
+    Try to navigate through the city while avoiding all such obstacles.
 
 
     2.) Press a to move left and d to move right. These controls can be changed anytime
 
 
-    3.) To reduce sudden flashes of light, keep pressing spacebar.
+    3.) Sudden flashes of light occur randomly after a given interval of time, these
+    flashes become more frequent as game progresses.
 
 
     4.) The player''s life will decrease if a collision occurs. If it reduces to 0,
     the game is over.
 
 
-    5.) Mini games can be played to increase the life'
+    5.) Hit space bar to fill the happiness meter.'
 --- !u!222 &1284655079
 CanvasRenderer:
   m_ObjectHideFlags: 0
