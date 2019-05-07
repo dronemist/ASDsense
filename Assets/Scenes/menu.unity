@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -774,14 +774,14 @@ RectTransform:
   m_GameObject: {fileID: 482267695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.96617, y: 0.6901214, z: 0.96617}
+  m_LocalScale: {x: 0.5, y: 0.6901214, z: 0.96617}
   m_Children: []
   m_Father: {fileID: 1512309135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 271, y: -0}
+  m_AnchoredPosition: {x: 203.4, y: 3.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &482267697
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -212.26624, y: 3.317276, z: 171.24718, w: -5.7603846}
+  m_margin: {x: -283.78732, y: 3.317276, z: 220.78368, w: -5.7603846}
   m_textInfo:
     textComponent: {fileID: 482267697}
     characterCount: 10
@@ -1730,6 +1730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ce5cbc8c4461444db3ce6873df73787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highscore: {fileID: 0}
 --- !u!1 &1284655076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,7 +2248,7 @@ RectTransform:
   m_GameObject: {fileID: 1512309134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.610687, y: 0.5308057, z: 1}
+  m_LocalScale: {x: 1.5, y: 0.5308057, z: 1}
   m_Children:
   - {fileID: 482267696}
   m_Father: {fileID: 1789335422}
@@ -2255,7 +2256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.61067957, y: 12.739338}
+  m_AnchoredPosition: {x: 2, y: 15}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512309136
@@ -2414,6 +2415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ce5cbc8c4461444db3ce6873df73787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highscore: {fileID: 642564706}
 --- !u!1 &1882779880
 GameObject:
   m_ObjectHideFlags: 0
