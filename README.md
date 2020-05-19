@@ -8,7 +8,7 @@ Siddhant Mago </br>
 ## Theme
 This is a game developed in unity 3-D and aims to make people view the world from the eyes of an autistic person. It is an infinite runner through crowded streets aimed to simulate how difficult it is for an autistic person to perform simple tasks such as going from one place to another. 
 
-## Technology used
+## Technologies used
 - Unity 3-D
 - C#
 
